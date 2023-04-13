@@ -14,7 +14,6 @@
       - docker
       - dropbox
       - backblaze
-      - dockutil
       - font-fira-code
       - zoom
       - kitty
@@ -37,6 +36,10 @@
     - name: Updating Homebrew
       homebrew:
         update_homebrew: true
+
+    - name: Tap a Homebrew repository, state present
+      community.general.homebrew_tap:
+        name: homebrew/cask-fonts
 
     - name: Upgrading Homebrew Packages
       homebrew:
