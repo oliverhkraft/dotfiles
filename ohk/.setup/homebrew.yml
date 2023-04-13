@@ -25,7 +25,6 @@
       - nvm
       - composer
       - neovim
-      - powerlevel10k
       - tmux
       - ffmpeg
       - mailhog
