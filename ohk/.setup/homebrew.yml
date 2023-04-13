@@ -1,0 +1,59 @@
+---
+- name: "Install MacOS Packages"
+  hosts: localhost
+  become: false
+  vars:
+    brew_cask_packages:
+      - 1password
+      - slack
+      - spotify
+      - todoist
+      - visual-studio-code
+      - dbngin
+      - google-chrome
+      - docker
+      - dropbox
+      - backblaze
+      - dockutil
+      - font-fira-code
+      - zoom
+      - kitty
+    brew_packages:
+      - git
+      - mysql
+      - php
+      - node
+      - nvm
+      - composer
+      - neovim
+      - powerlevel10k
+      - tmux
+      - ffmpeg
+      - mailhog
+      - ansible
+    upgrade_homebrew_packages: false
+
+  tasks:
+    - name: Updating Homebrew
+      homebrew:
+        update_homebrew: true
+
+    - name: Upgrading Homebrew Packages
+      homebrew:
+        upgrade_all: "{{ upgrade_homebrew_packages }}"
+      register: result
+      until: result is successful
+
+    - name: Installing Homebrew Cask Packages
+      homebrew_cask:
+        name: "{{ brew_cask_packages }}"
+        state: present
+      register: result
+      until: result is successful
+
+    - name: Installing Homebrew Packages
+      homebrew:
+        name: "{{ brew_packages }}"
+        state: present
+      register: result
+      until: result is successful

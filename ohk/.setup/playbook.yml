@@ -1,0 +1,15 @@
+---
+  - name: Decrypt files
+    hosts: localhost
+    tasks:
+      - name: Decrypting...
+        command: sh decrypt.sh
+
+  - name: Setup homebrew
+    import_playbook: homebrew.yml
+
+  - name: Setup Dock
+    hosts: localhost
+    tasks:
+      - name: Removing, adding and rearraing
+        command: sh dock.sh
