@@ -1,0 +1,9 @@
+[user]
+	name = Oliver Hertzman Kraft
+	email = oliver@oliverkraft.io
+[pull]
+	rebase = false
+[alias]
+    delete-local-merged = "!git fetch && git branch --merged | egrep -v 'master|production'  | xargs git branch -d"
+[status]
+    short = true

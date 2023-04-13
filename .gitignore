@@ -1,0 +1,4 @@
+.DS_Store
+
+ohk/.ssh/*
+ohk/.utils/db/*
