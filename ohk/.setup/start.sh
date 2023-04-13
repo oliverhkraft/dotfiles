@@ -20,4 +20,9 @@ brew install ansible
 
 ansible-playbook ohk/.setup/playbook.yml
 
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+
+p10k configure
+
 pretty_print "Done! 🎉"

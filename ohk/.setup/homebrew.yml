@@ -26,6 +26,7 @@
       - composer
       - neovim
       - tmux
+      - zsh
       - ffmpeg
       - mailhog
       - ansible
