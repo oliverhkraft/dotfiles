@@ -39,6 +39,8 @@ if [ ! -d "~/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]; then
     git clone https://github.com/zsh-users/zsh-autosuggestions mkdir -p ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 fi
 
+brew install romkatv/powerlevel10k/powerlevel10k
+
 pretty_print "🔔 p10k configure"
 
 pretty_print "Done! 🎉"
