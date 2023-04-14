@@ -32,7 +32,6 @@ alias gpl="git pull"
 alias gst="git stash"
 alias gstl="git stash list"
 alias glg="git log --graph --oneline --decorate --all"
-alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
 # Dev tools
 alias vi="nvim"
