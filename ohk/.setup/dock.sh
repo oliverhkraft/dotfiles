@@ -17,5 +17,7 @@ dockutil --add /Applications/Google\ Chrome.app --before 'Slack'
 dockutil --add '~/Downloads' --view list --display folder
 
 defaults write com.apple.dock tilesize -integer 36
+defaults write com.apple.dock show-recents -bool FALSE
+
 
 killall Dock

@@ -24,16 +24,19 @@ if [ ! -d "~/.oh-my-zsh" ]; then
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
-if [ ! -d "$ZSH_CUSTOM/themes/powerlevel10k" ]; then
-    git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+if [ ! -d "~/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
+    mkdir -p ~/.oh-my-zsh/custom/themes/
+    git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
 fi
 
-if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" ]; then
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+if [ ! -d "~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]; then
+    mkdir -p ~/.oh-my-zsh/custom/plugins/
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git mkdir -p ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 fi
 
-if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ]; then
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+if [ ! -d "~/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]; then
+    mkdir -p ~/.oh-my-zsh/custom/plugins/
+    git clone https://github.com/zsh-users/zsh-autosuggestions mkdir -p ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 fi
 
 pretty_print "🔔 p10k configure"
