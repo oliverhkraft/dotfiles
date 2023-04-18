@@ -2,3 +2,5 @@
 
 ohk/.ssh/*
 ohk/.utils/db/*
+ohk/.config/configstore/*
+ohk/.config/nvim/lazy-lock.json

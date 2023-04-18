@@ -67,6 +67,8 @@ alias cleanseed="php artisan migrate:fresh && php artisan db:seed"
 alias checker-all="./vendor/bin/pint && ./vendor/bin/phpstan analyze --memory-limit=2G && ./bin/test tests"
 alias checker="./vendor/bin/pint && ./vendor/bin/phpstan analyze --memory-limit=2G"
 
+alias phpstan="./vendor/bin/phpstan analyze --memory-limit=2G --pro"
+
 alias phpstan-baseline="./vendor/bin/phpstan analyse --generate-baseline --memory-limit=2G"
 
 alias clone-db='sh ~/.utils/db/clone-db.sh'

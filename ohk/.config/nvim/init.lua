@@ -328,16 +328,8 @@ vim.g.loaded_netrwPlugin = 1
 
 
 -- init.lua
-require('phpstan_plugin')
-
--- Run PHPStan on file save
-vim.cmd([[autocmd BufWritePost *.php lua require('phpstan_plugin').phpstan_on_save()]])
--- Run PHPStan on startup for the first opened PHP file
-vim.cmd([[autocmd VimEnter *.php nested autocmd BufReadPost *.php lua require('phpstan_plugin').phpstan_on_save()]])
-vim.api.nvim_set_keymap('n', '<leader>el', ':lua require("phpstan_plugin").show_errors()<CR>', {noremap = true, silent = true})
 
 
--- END OHK
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
@@ -433,7 +425,7 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("FTerm").toggle()<CR>', { des
 -- See `:help nvim-treesitter`
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
-  ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'typescript', 'help', 'vim', 'php', 'javascript' },
+  ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'typescript', 'vim', 'php', 'javascript' },
 
   -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
   auto_install = true,

@@ -17,7 +17,9 @@
       - font-fira-code
       - zoom
       - kitty
+      - tableplus
     brew_packages:
+      - ripgrep
       - git
       - mysql
       - php
