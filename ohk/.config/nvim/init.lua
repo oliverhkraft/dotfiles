@@ -322,14 +322,9 @@ vim.o.cursorline = true
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-
-
-
-
+vim.opt.colorcolumn = "80"
 
 -- init.lua
-
-
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
