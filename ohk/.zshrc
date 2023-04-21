@@ -8,6 +8,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
 
+autoload -Uz compinit && compinit
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
