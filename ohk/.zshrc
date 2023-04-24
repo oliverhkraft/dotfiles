@@ -19,7 +19,7 @@ export PATH="$HOME/.tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
 
 alias cl="clear"
-alias conf="nvim $HOME/.zshrc"
+alias conf="nvim $HOME/dotfiles"
 alias conf-nvim="nvim $HOME/.config/nvim/init.lua"
 alias reload="source $HOME/.zshrc"
 
@@ -72,7 +72,6 @@ alias checker-all="./vendor/bin/pint && ./vendor/bin/phpstan analyze --memory-li
 alias checker="./vendor/bin/pint && ./vendor/bin/phpstan analyze --memory-limit=2G"
 
 alias phpstan="./vendor/bin/phpstan analyze --memory-limit=2G --pro"
-
 alias phpstan-baseline="./vendor/bin/phpstan analyse --generate-baseline --memory-limit=2G"
 
 alias clone-db='sh ~/.utils/db/clone-db.sh'
