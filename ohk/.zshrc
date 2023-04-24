@@ -15,6 +15,8 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 export PATH=/Users/Shared/DBngin/mysql/8.0.27/bin:$PATH
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+eval "$(tmuxifier init -)"
 
 alias cl="clear"
 alias conf="nvim $HOME/.zshrc"
