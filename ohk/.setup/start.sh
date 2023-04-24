@@ -39,6 +39,11 @@ if [ ! -d "~/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]; then
     git clone https://github.com/zsh-users/zsh-autosuggestions mkdir -p ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 fi
 
+if [ ! -d "~/.tmuxifier" ]; then
+    git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
+fi
+
+
 brew install romkatv/powerlevel10k/powerlevel10k
 
 pretty_print "🔔 p10k configure"
