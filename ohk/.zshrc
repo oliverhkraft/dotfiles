@@ -76,3 +76,5 @@ alias phpstan="./vendor/bin/phpstan analyze --memory-limit=2G --pro"
 alias phpstan-baseline="./vendor/bin/phpstan analyse --generate-baseline --memory-limit=2G"
 
 alias clone-db='sh ~/.utils/db/clone-db.sh'
+
+alias laravel-tools="tmuxifier load-window laravel"
