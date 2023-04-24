@@ -21,6 +21,7 @@
       - tableplus
     brew_packages:
       - ripgrep
+      - tmux
       - git
       - mysql
       - php
